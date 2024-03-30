@@ -14,13 +14,13 @@ eyePassword.addEventListener('click', ()=>{
 
 stdLogin.addEventListener('submit', (e)=>{
     e.preventDefault();
-
+    stdLogin.reset()
 })
 
 stdLoginSubmitBtn.addEventListener('submit', (e)=>{
     e.preventDefault();
-
+    stdLogin.reset()
 })
 
-// Clears the Username field on hitting the refresh browser button 
-document.getElementById("username").value = "";
+// Clears the form on hitting the refresh browser button 
+stdLogin.reset()

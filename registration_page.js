@@ -43,8 +43,5 @@ registerBtn.addEventListener('submit', (e)=>{
 
 });
 
+// Clears the form on hitting the refresh browser button 
 stdRegistration.reset(); 
-
-
-
-
