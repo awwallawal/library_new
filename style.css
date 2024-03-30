@@ -260,7 +260,7 @@ a {
 /* ----------------student_Login.html------------------------- */
 
 .wrapper .student-body {
-    height: 150rem;
+    height: 160rem;
     width: 100%;
     /*  */
     background: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.4)), url(./image/daniel-filipe-antunes-santos-B_3gNlkW-W0-unsplash.jpg);
@@ -358,7 +358,17 @@ a {
 
 .wrapper .student-body .box .register {
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
+#signup {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
-/* =======================Registration Page ================== */
+.reset {
+    color: whitesmoke;
+}

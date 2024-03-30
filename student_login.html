@@ -17,7 +17,7 @@
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./books.html">Books</a></li>
-                    <li><a href="#">Student-Login</a></li>
+                    <li><a href="./student_login.html">Student-Login</a></li>
                     <li><a href="#">Admin-Login</a></li>
                     <li><a href="#">Feedback</a></li>
                 </ul>
@@ -30,7 +30,7 @@
             <div class="box">
                 <div class="form-logo"><img src="./image/school_logo.png" alt=""></div>
 
-                <form action="" id="form" name="std-login" method="">
+                <form action="" id="std-login" name="stdlogin" method="">
                     <div class="row">
                         <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                         <label for="username"><p>Username</p></label>
@@ -42,10 +42,10 @@
                         <label for="password"><p>Password</p></label>
                         <input type="password" name="password" id="password" placeholder="password1234" required>
                     </div>
-                    <p class="register">Don't have an account? <span> <a href="./registration.html" target="_blank">Sign Up</a></span></p>
-                    <p><a href="https://www.google.com" target="_blank">Forgot password?</a></p>
+                    <p class="register">Don't have an account? <span > <a id="signup" href="./registration.html" target="_blank">Sign Up</a></span></p>
+                    <p><a href="https://www.google.com" target="_blank" class="reset">Forgot password?</a></p>
 
-                    <button type="submit" id="form-submit">Login</button>
+                    <button type="submit" id="stdLogin-submit">Login</button>
                 </form>
                 
             </div>
@@ -155,10 +155,6 @@
     
 
     <script src="./app.js"></script>
-
-    <!-- Email Validator CDN -->
-    <!-- <script src="https://unpkg.com/validator@latest/validator.min.js"></script> -->
-    <!-- Email validation not needed on the Login Page -->
 
     <!-- Box Icon Addition -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

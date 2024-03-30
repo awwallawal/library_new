@@ -27,20 +27,24 @@
         </header>
     
         <section class="student-body registration-page">
-            <form class="reg-form"> 
+            <form name="std-reg" action="" method="" class="reg-form" id="std-reg" > 
 
                     <h1> Student Registeration Form</h1>  
                     <hr>  
                     <label> Firstname </label>   
-                    <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+                    <input type="text" name="firstname" placeholder= "Firstname" size="15" required id="firstname"/>   
                     <label> Middlename: </label>   
-                    <input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+                    <input type="text" name="middlename" placeholder="Middlename" size="15" required id="middlename"/>   
                     <label> Lastname: </label>    
-                    <input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+                    <input type="text" name="lastname" placeholder="Lastname" size="15"required id="lastname"/>
+                    <label> Username: </label>    
+                    <input type="text" name="username" placeholder="username" size="15"required id="username"/>
+                    <label> Matric Number: </label>    
+                    <input type="text" name="matricnumber" placeholder="FCAHPT/AHPT/2024/014" size="15"required id="matricnumber"/>   
                 
                     <div>
                         <label> Course : </label>   
-                            <select>  
+                            <select id="course">  
                                 <option value="Course">Animal Health and Production Technology</option>  
                                 <option value="BCA">Computer Science</option>  
                                 <option value="BBA">Veterinary Laboratory Technology</option>  
@@ -65,21 +69,22 @@
                 
                 </div>  
                     <label> Phone : </label>  
-                    <input type="text" name="country code" placeholder="+2348012345678" size="2"/>   
+                    <input type="text" name="country code" placeholder="+2348012345678" size="2" id="phone"/>   
                     
                     <label>Current Address : </label>  
-                    <textarea cols="80" rows="5" required>  
+                    <textarea cols="80" rows="5" id="currentaddress" required>  
                     </textarea>
 
                     <label for="email">Email</label>  
-                    <input type="text" placeholder="Enter Email" name="email" required>  
+                    <input type="text" placeholder="Enter Email" name="email" required id="email">  
                         
                     <label for="psw">Password</label>  
-                    <input type="password" placeholder="Enter Password" name="psw" required>  
+                    <input type="password" placeholder="Enter Password" name="psw" required id="psw">
+
                     <label for="psw-repeat">Re-type Password</label>  
-                    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+                    <input type="password" placeholder="Retype Password" name="psw-repeat" required id="psw-repeat">  
                     
-                    <button type="submit" class="registerbtn">Register</button>    
+                    <button type="submit" id="registerbtn" class="registerbtn">Register</button>    
             </form> 
 
             
@@ -188,11 +193,10 @@
     </div>
     
 
-    <script src="./app.js"></script>
+    <script src="./registrationpage.js"></script>
 
     <!-- Email Validator CDN -->
-    <!-- <script src="https://unpkg.com/validator@latest/validator.min.js"></script> -->
-    <!-- Email validation not needed on the Login Page -->
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
 
     <!-- Box Icon Addition -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

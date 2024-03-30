@@ -1,21 +1,25 @@
+.student-body .registration-page {
+    padding: 2rem; 
+}
+
 
 .reg-form {
     width: 50%;
     height: auto;
     margin: auto;
     background-color: #743115;
-    padding: 6rem  5rem;
+    padding: 4rem  6rem;
 }
 
 .reg-form label {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .reg-form input[type=text], .reg-form input[type=password], .reg-form textarea {
     width: 100%;  
-    padding: 1.2rem;  
+    padding: 1rem;  
     margin: 5px 0 22px 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-radius: 0.8rem;
 }
 
