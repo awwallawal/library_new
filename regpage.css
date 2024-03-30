@@ -1,0 +1,71 @@
+
+.reg-form {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: #743115;
+    padding: 6rem  5rem;
+}
+
+.reg-form label {
+    font-size: 1.8rem;
+}
+
+.reg-form input[type=text], .reg-form input[type=password], .reg-form textarea {
+    width: 100%;  
+    padding: 1.2rem;  
+    margin: 5px 0 22px 0;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.reg-form input[type=text]:focus, .reg-form input[type=password]:focus {  
+    background-color: orange;  
+    outline: none;  
+  }
+
+.reg-form input[type=radio] {
+    margin-right: 1rem;
+}
+
+
+.reg-form div {  
+    padding: 10px 0;  
+ }
+
+ .reg-form select {
+    width: 45%;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+ }
+
+ .reg-form select option {
+    font-size: 1.3rem;
+ }
+
+
+.reg-form hr {  
+border: 1px solid #f1f1f1;  
+margin-bottom: 25px;  
+}  
+
+.reg-form .registerbtn {  
+background-color: #4CAF50;  
+color: white;  
+padding: 16px 20px;  
+margin: 8px 0;  
+border: none;  
+cursor: pointer;  
+width: 100%;  
+opacity: 0.9;
+font-size: 2rem;
+border-radius: 0.8rem;
+}
+
+.reg-form .registerbtn:hover {  
+opacity: 1;  
+} 
+
+.reg-form p {
+    font-size: 1.8rem;
+}

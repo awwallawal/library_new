@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Login</title>
+    <title>Registration Page</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- Registration Page CSS -->
+    <link rel="stylesheet" href="./regpage.css">
 </head>
 <body>
     <div class="wrapper">
@@ -17,7 +19,7 @@
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./books.html">Books</a></li>
-                    <li><a href="#">Student-Login</a></li>
+                    <li><a href="./student_login.html">Student-Login</a></li>
                     <li><a href="#">Admin-Login</a></li>
                     <li><a href="#">Feedback</a></li>
                 </ul>
@@ -25,30 +27,62 @@
         </header>
     
         <section class="student-body registration-page">
+            <form class="reg-form"> 
 
-
-            <div class="box">
-                <div class="form-logo"><img src="./image/school_logo.png" alt=""></div>
-
-                <form action="" id="form" name="std-login" method="">
-                    <div class="row">
-                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                        <label for="username"><p>Username</p></label>
-                        <input type="text" name="username" id="username" placeholder="FCAHPT/2011/090" required>
-                    </div>
-
-                    <div class="row">
-                        <span class="icon" id="eye-password"><ion-icon name="eye-off-outline" id="eye-icon"></ion-icon></span>
-                        <label for="password"><p>Password</p></label>
-                        <input type="password" name="password" id="password" placeholder="password1234" required>
-                    </div>
-                    <p class="register">Don't have an account? <span> <a href="https://nairaland.com" target="_blank">Sign Up</a></span></p>
-                    <p><a href="https://www.google.com" target="_blank">Forgot password?</a></p>
-
-                    <button type="submit" id="form-submit">Login</button>
-                </form>
+                    <h1> Student Registeration Form</h1>  
+                    <hr>  
+                    <label> Firstname </label>   
+                    <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+                    <label> Middlename: </label>   
+                    <input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+                    <label> Lastname: </label>    
+                    <input type="text" name="lastname" placeholder="Lastname" size="15"required />   
                 
-            </div>
+                    <div>
+                        <label> Course : </label>   
+                            <select>  
+                                <option value="Course">Animal Health and Production Technology</option>  
+                                <option value="BCA">Computer Science</option>  
+                                <option value="BBA">Veterinary Laboratory Technology</option>  
+                                <option value="B.Tech">Statistics</option>  
+                                <option value="MBA">Science LaboratoryTechnology</option>  
+                                <option value="MCA">Fisheries Technology</option>  
+                                <option value="M.Tech">Animal Health Technology</option>
+                                <option value="B.Tech">Agricultural Extension and Management</option>  
+                                <option value="MBA">Agribusiness Management</option>  
+                                <option value="MCA">Pasture and Range Management</option>  
+                            </select>  
+                    </div>
+                  
+                <div>                   
+                    <p>Please select your gender:</p>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="others" name="gender" value="others">
+                        <label for="others">Other</label>
+                
+                </div>  
+                    <label> Phone : </label>  
+                    <input type="text" name="country code" placeholder="+2348012345678" size="2"/>   
+                    
+                    <label>Current Address : </label>  
+                    <textarea cols="80" rows="5" required>  
+                    </textarea>
+
+                    <label for="email">Email</label>  
+                    <input type="text" placeholder="Enter Email" name="email" required>  
+                        
+                    <label for="psw">Password</label>  
+                    <input type="password" placeholder="Enter Password" name="psw" required>  
+                    <label for="psw-repeat">Re-type Password</label>  
+                    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+                    
+                    <button type="submit" class="registerbtn">Register</button>    
+            </form> 
+
+            
         </section>
     
         <footer>
